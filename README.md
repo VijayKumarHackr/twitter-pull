@@ -1,8 +1,6 @@
 # Twitter Pull Chrome Extension
 
-This is an example of a Chrome Extension that allows the user to perform a three-legged oauth into Twitter. It uses [`chrome.storage.local`](https://developer.chrome.com/extensions/storage) for storing the oauth tokens.
-
-![The chrome extension with twitter oauth flow](http://i.imgur.com/aCJLuvQ.gif)
+This Chrome Extension will add an option to your content menu to import your latest tweet.
 
 ## Setup
 

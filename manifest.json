@@ -23,16 +23,19 @@
       "js/lib/twitter.js",
       "js/background.js"
     ],
-    "persistent": false
+    "persistent": true
   },
   "permissions": [
     "tabs",
     "storage",
+    "contextMenus",
+    "http://*/*",
+    "https://*/*",
     "https://api.twitter.com/*"
   ],
   "content_security_policy": "script-src 'self'; object-src 'self'",
   "content_scripts": [{
-    "matches": ["http://nvijaykumar.me/twitter-pull"],
-    "js": ["js/session.js"]
+    "matches": ["http://*/*", "https://*/*"],
+    "js": ["js/lib/jquery.min.js", "js/session.js"]
   }]
 }

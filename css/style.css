@@ -1,0 +1,7 @@
+html, body {
+    width: 250px;
+    min-height: 40px;
+    margin: 0;
+    overflow: hidden;
+    padding: 0px;
+}

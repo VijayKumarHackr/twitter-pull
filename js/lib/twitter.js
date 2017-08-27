@@ -1,7 +1,7 @@
 (function() {
   var API_URL = 'https://api.twitter.com/';
-  var consumer_key = 'OkuRBOAiAm4ZmGUaWOEN84vTo';
-  var consumer_secret = 'WLWdQYZdLngzxIJXMkTwZhHKI6xYeWYiQJkNoir1N8jv3DyZf2';
+  var consumer_key = 'XXXXXXXXXXXXXXXXX';
+  var consumer_secret = 'YYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY';
   var Twitter = {
     oauth_token: null,
     oauth_token_secret: '',
@@ -77,6 +77,7 @@
       });
 
       $[method.toLowerCase()](API_URL + path, p.join('&'), fn).error(function(res) {
+        console.log(res);
         if(res && res.responseText && res.responseText.match(/89/)) {
           Twitter.authenticate();
         }
